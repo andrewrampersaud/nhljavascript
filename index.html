@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+
+<head>
+
+<meta charset="utf-8">
+
+
+
+</head>
+
+<body>
+
+<h2 style="margin:90px 0 45px 2px; text-align:center; font-family:Arial">NHL Scoring Leaders 1993-94</h2>
+
+<p id="demo" style="margin-left:370px"></p>
+
+<script>
+var players = ["<strong style=padding-right:105px>Player</strong>", "<span style=padding-right:49px>Wayne Gretzky </span>", "<span style=padding-right:50px>Sergei Federov </span>", "<span style=padding-right:69px>Adam Oates </span>", "<span style=padding-right:53px>Doug Gilmour </span>", "<span style=padding-right:77px>Pavel Bure </span>", "<span style=padding-right:45px>Jeremy Roenick </span>", "<span style=padding-right:68px>Mark Recchi </span>", "<span style=padding-right:32px>Brendan Shanahan </span>", "<span style=padding-right:38px>Dave Andreychuk</span>", "<span style=padding-right:73px>Jaromir Jagr </span>"];
+
+var team = ["<strong style=padding-right:150px>Team</strong>", "<span style=padding-right:66px>Los Angeles Kings</span>", "<span style=padding-right:68px>Detroit Red Wings</span>", "<span style=padding-right:95px>Boston Bruins</span>", "<span style=padding-right:55px>Toronto Maple Leafs</span>", 
+"<span style=padding-right:61px>Vancouver Canucks</span>", "<span style=padding-right:52px>Chicago Blackhawks</span>", "<span style=padding-right:61px>Philadelphia Flyers</span>", "<span style=padding-right:86px>St. Louis Blues</span>", "<span style=padding-right:52px>Toronto Maple Leafs</span>", "<span style=padding-right:56px>Pittsburgh Penguins</span>"];
+
+
+var games = ["<strong style=padding-right:30px>GP</strong>", "<span style=padding-right:30px>81</span>", "<span style=padding-right:30px>82</span>", "<span style=padding-right:30px>77</span>", "<span style=padding-right:30px>83</span>", "<span style=padding-right:30px>76</span>", "<span style=padding-right:30px>84</span>", "<span style=padding-right:30px>84</span>", "<span style=padding-right:30px>81</span>", "<span style=padding-right:30px>83</span>", "<span style=padding-right:30px>80</span>"];
+
+var goals = ["<strong style=padding-right:32px>G</strong>", "<span style=padding-right:30px>38</span>", "<span style=padding-right:30px>56</span>", "<span style=padding-right:30px>32</span>", "<span style=padding-right:30px>27</span>", "<span style=padding-right:30px>60</span>", "<span style=padding-right:30px>46</span>", "<span style=padding-right:30px>40</span>", "<span style=padding-right:30px>52</span>", "<span style=padding-right:30px>53</span>", "<span style=padding-right:30px>32</span>"];
+
+var assists = ["<strong style=padding-right:32px>A</strong>", "<span style=padding-right:30px>92</span>", "<span style=padding-right:30px>64</span>", "<span style=padding-right:30px>80</span>", "<span style=padding-right:30px>84</span>", "<span style=padding-right:30px>47</span>", "<span style=padding-right:30px>61</span>", "<span style=padding-right:30px>67</span>", "<span style=padding-right:30px>50</span>", "<span style=padding-right:30px>46</span>", "<span style=padding-right:30px>67</span>"];
+
+var points = ["<strong style=padding-right:20px>PTS</strong>", "<span>120</span>", "<span>112</span>", "<span>111</span>", "<span>107</span>", "<span>107</span>", "<span>107</span>", "<span>102</span>", "<span>99</span>", "<span>99</span>"];
+
+var text = "<ul style=padding-right:30px>";
+
+var i;
+
+for (i = 0; i < 10; i++) {
+
+text += "<li style=list-style:none>"+players[i] +team[i] +games[i] +goals[i] +assists[i] +points[i]+"</li><br>";
+
+}
+
+text +="</ul>";
+
+document.getElementById("demo").innerHTML=text;
+
+
+
+</script>
+
+</body>
+
+</html>
